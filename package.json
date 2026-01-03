@@ -7,7 +7,7 @@
     "start": "npx live-server --port=8080 --open=/",
     "serve": "python -m http.server 8000",
     "deploy": "gh-pages -d .",
-    "test": "echo "No tests specified" && exit 0"
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,9 @@
     "url": "https://github.com/KDippan/github-profile-finder/issues"
   },
   "homepage": "https://gitprofilefind.dippanbhusal.tech",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.0"
+  },
   "devDependencies": {
     "live-server": "^1.2.2",
     "gh-pages": "^6.1.1"
