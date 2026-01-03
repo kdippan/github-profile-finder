@@ -1,0 +1,35 @@
+name: Build and Release APK
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build and Release APK
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Build and Release APK
+        uses: sangatdesai/release-apk@V1.0
+        with:
+          app-name: 'GitHub Profile Finder'
+          package-name: 'tech.dippanbhusal.gitprofilefinder'
+          host: 'https://gitprofilefind.dippanbhusal.tech'
+          icon-url: 'https://gitprofilefind.dippanbhusal.tech/assets/icon-512x512.png'
+          theme-color: '#0969da'
+          background-color: '#0d1117'
+          start-url: '/'
+          display: 'standalone'
+          orientation: 'portrait'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
