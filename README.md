@@ -27,8 +27,6 @@
 
 - [✨ Features](#-features)
 - [🎯 Demo](#-demo)
-  - [🌐 Live Website](#-live-website)
-  - [📱 Android APK](#-android-apk)
 - [🚀 Quick Start](#-quick-start)
 - [📦 Installation](#-installation)
 - [🎨 Screenshots](#-screenshots)
@@ -105,20 +103,6 @@ Try searching for popular developers:
 - `tj` (TJ Holowaychuk - Express.js creator)
 - `sindresorhus` (Sindre Sorhus - Prolific open source developer)
 - `KDippan` (That's me! 😊)
-
-### 📱 Android APK
-**Download and install the app on your Android device!**
-
-[![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](https://github.com/KDippan/github-profile-finder/releases/latest)
-
-The app is automatically built and released as an APK using GitHub Actions. Simply download the latest APK from the [Releases page](https://github.com/KDippan/github-profile-finder/releases) and install it on your Android device.
-
-**Installation Steps:**
-1. Go to the [Releases page](https://github.com/KDippan/github-profile-finder/releases)
-2. Download the latest `app-release.apk` file
-3. Enable "Install from Unknown Sources" in your Android settings if needed
-4. Open the downloaded APK file and install
-5. Enjoy the app! 🎉
 
 ---
 
