@@ -3,42 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Search and explore GitHub profiles with detailed statistics, repositories, and user information. Modern GitHub Profile Finder with dark mode support.">
-    <meta name="keywords" content="GitHub, profile finder, GitHub API, developer search, repository viewer">
-    <meta name="author" content="Your Name">
-    <meta property="og:title" content="GitHub Profile Finder">
-    <meta property="og:description" content="Search and explore GitHub profiles with detailed statistics">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>GitHub Profile Finder - Search & Discover GitHub Users | By Dippan Bhusal</title>
+    <meta name="title" content="GitHub Profile Finder - Search & Discover GitHub Users | By Dippan Bhusal">
+    <meta name="description" content="A modern, feature-rich GitHub Profile Finder with advanced search, live updates, dark mode, and beautiful UI. Search any GitHub user and view their profile, repositories, and statistics instantly. Built by Dippan Bhusal.">
+    <meta name="keywords" content="github profile finder, github search, github user search, github api, github profile viewer, github stats, repository finder, developer search, github explorer, dippan bhusal, open source, web app, javascript, html, css">
+    <meta name="author" content="Dippan Bhusal">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#0969da">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gitprofilefind.dippanbhusal.tech/">
+    <meta property="og:title" content="GitHub Profile Finder - Search & Discover GitHub Users">
+    <meta property="og:description" content="A modern, feature-rich GitHub Profile Finder with advanced search, live updates, and beautiful UI. Search any GitHub user instantly!">
+    <meta property="og:image" content="https://gitprofilefind.dippanbhusal.tech/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="GitHub Profile Finder">
+    <meta property="og:locale" content="en_US">
     
-    <title>GitHub Profile Finder - Search GitHub Users</title>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://gitprofilefind.dippanbhusal.tech/">
+    <meta name="twitter:title" content="GitHub Profile Finder - Search & Discover GitHub Users">
+    <meta name="twitter:description" content="A modern, feature-rich GitHub Profile Finder with advanced search, live updates, and beautiful UI. Search any GitHub user instantly!">
+    <meta name="twitter:image" content="https://gitprofilefind.dippanbhusal.tech/assets/twitter-card.png">
+    <meta name="twitter:creator" content="@dippan_bhusal">
+    <meta name="twitter:site" content="@dippan_bhusal">
     
-    <!-- Font Awesome for icons -->
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gitprofilefind.dippanbhusal.tech/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://api.github.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "GitHub Profile Finder",
+      "description": "A modern, feature-rich GitHub Profile Finder with advanced search, live updates, and beautiful UI. Search any GitHub user and view their profile, repositories, and statistics instantly.",
+      "url": "https://gitprofilefind.dippanbhusal.tech/",
+      "image": "https://gitprofilefind.dippanbhusal.tech/assets/og-image.png",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript. Modern browser required.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Dippan Bhusal",
+        "url": "https://dippanbhusal.tech",
+        "sameAs": [
+          "https://github.com/KDippan",
+          "https://instagram.com/dippan.bhusal"
+        ]
+      },
+      "creator": {
+        "@type": "Person",
+        "name": "Dippan Bhusal",
+        "email": "dippan.connect@gmail.com",
+        "url": "https://dippanbhusal.tech",
+        "jobTitle": "Full-Stack Developer",
+        "sameAs": [
+          "https://github.com/KDippan",
+          "https://instagram.com/dippan.bhusal",
+          "https://www.linkedin.com/in/dippan-bhusal"
+        ]
+      },
+      "inLanguage": "en-US",
+      "datePublished": "2026-01-03",
+      "dateModified": "2026-01-03",
+      "keywords": "github profile finder, github search, github user search, github api, repository finder",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1"
+      }
+    }
+    </script>
+    
+    <!-- Additional Schema for SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "GitHub Profile Finder",
+      "operatingSystem": "Web Browser",
+      "applicationCategory": "WebApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "softwareVersion": "1.0.0",
+      "featureList": "Live Search, User Profile Display, Repository Showcase, Dark/Light Mode, Recent Searches, Rate Limit Tracking"
+    }
+    </script>
+    
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://gitprofilefind.dippanbhusal.tech/"
+      }]
+    }
+    </script>
 </head>
 <body>
-    <header class="header">
+    <!-- GitHub Star Banner -->
+    <div class="github-banner" id="github-banner">
+        <div class="github-banner-content">
+            <i class="fab fa-github"></i>
+            <span>Love this project? Give it a ⭐ on GitHub!</span>
+            <a href="https://github.com/KDippan/github-profile-finder" target="_blank" rel="noopener noreferrer" class="github-banner-btn">
+                <i class="fas fa-star"></i>
+                Star on GitHub
+            </a>
+            <button class="github-banner-close" aria-label="Close banner" onclick="closeBanner()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
                     <i class="fab fa-github"></i>
                     <h1>GitHub Profile Finder</h1>
                 </div>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                    <i class="fas fa-moon"></i>
-                </button>
+                <div class="header-actions">
+                    <!-- GitHub Star Button -->
+                    <a href="https://github.com/KDippan/github-profile-finder" target="_blank" rel="noopener noreferrer" class="header-btn github-star-btn" title="Star on GitHub">
+                        <i class="fas fa-star"></i>
+                        <span class="btn-text">Star</span>
+                    </a>
+                    
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
     
-    <main class="main">
+    <!-- Main Content -->
+    <main class="main" role="main">
         <div class="container">
             <!-- Search Section -->
-            <section class="search-section">
+            <section class="search-section" aria-label="Search for GitHub users">
                 <div class="search-wrapper">
                     <div class="search-input-group">
-                        <i class="fas fa-search search-icon"></i>
+                        <i class="fas fa-search search-icon" aria-hidden="true"></i>
                         <input 
                             type="text" 
                             id="search-input" 
@@ -46,28 +193,29 @@
                             placeholder="Search GitHub username..."
                             aria-label="GitHub username search"
                             autocomplete="off"
+                            spellcheck="false"
                         >
-                        <button id="clear-btn" class="clear-btn hidden" aria-label="Clear search">
+                        <button id="clear-btn" class="clear-btn hidden" aria-label="Clear search input">
                             <i class="fas fa-times"></i>
                         </button>
                     </div>
-                    <button id="search-btn" class="search-btn">
+                    <button id="search-btn" class="search-btn" aria-label="Search GitHub user">
                         <span>Search</span>
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
                 
                 <!-- Rate Limit Info -->
-                <div id="rate-limit-info" class="rate-limit-info hidden">
+                <div id="rate-limit-info" class="rate-limit-info hidden" role="status" aria-live="polite">
                     <i class="fas fa-info-circle"></i>
                     <span id="rate-limit-text"></span>
                 </div>
             </section>
 
             <!-- Recent Searches -->
-            <section id="recent-searches" class="recent-searches hidden">
+            <section id="recent-searches" class="recent-searches hidden" aria-label="Recent searches">
                 <h2 class="section-title">Recent Searches</h2>
-                <div id="recent-chips" class="recent-chips"></div>
+                <div id="recent-chips" class="recent-chips" role="list"></div>
             </section>
 
             <!-- Empty State -->
@@ -94,7 +242,7 @@
             </section>
 
             <!-- Loading State -->
-            <section id="loading-container" class="loading-container hidden">
+            <section id="loading-container" class="loading-container hidden" aria-label="Loading user profile" aria-live="polite">
                 <div class="profile-skeleton">
                     <div class="skeleton-header">
                         <div class="skeleton skeleton-avatar"></div>
@@ -121,7 +269,7 @@
             </section>
 
             <!-- Error State -->
-            <section id="error-container" class="error-container hidden">
+            <section id="error-container" class="error-container hidden" role="alert" aria-live="assertive">
                 <div class="error-content">
                     <div class="error-icon">
                         <i id="error-icon-el" class="fas fa-exclamation-circle"></i>
@@ -136,19 +284,19 @@
             </section>
 
             <!-- Profile Container -->
-            <section id="profile-container" class="profile-container hidden">
+            <section id="profile-container" class="profile-container hidden" aria-label="User profile information">
                 <!-- Profile Card -->
-                <div class="profile-card">
+                <article class="profile-card">
                     <div class="profile-header">
-                        <img id="user-avatar" class="user-avatar" alt="User avatar">
+                        <img id="user-avatar" class="user-avatar" alt="User avatar" loading="lazy">
                         <div class="profile-actions">
-                            <button id="copy-url-btn" class="action-btn" title="Copy profile URL">
+                            <button id="copy-url-btn" class="action-btn" title="Copy profile URL" aria-label="Copy profile URL to clipboard">
                                 <i class="fas fa-copy"></i>
                             </button>
-                            <button id="share-btn" class="action-btn" title="Share profile">
+                            <button id="share-btn" class="action-btn" title="Share profile" aria-label="Share this profile">
                                 <i class="fas fa-share-alt"></i>
                             </button>
-                            <a id="github-link-btn" class="action-btn" title="View on GitHub" target="_blank" rel="noopener noreferrer">
+                            <a id="github-link-btn" class="action-btn" title="View on GitHub" aria-label="View profile on GitHub" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -161,104 +309,211 @@
                         
                         <div class="profile-meta">
                             <div id="user-location" class="meta-item hidden">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                                 <span></span>
                             </div>
                             <div id="user-company" class="meta-item hidden">
-                                <i class="fas fa-building"></i>
+                                <i class="fas fa-building" aria-hidden="true"></i>
                                 <span></span>
                             </div>
                             <div id="user-blog" class="meta-item hidden">
-                                <i class="fas fa-link"></i>
+                                <i class="fas fa-link" aria-hidden="true"></i>
                                 <a target="_blank" rel="noopener noreferrer"></a>
                             </div>
                             <div id="user-twitter" class="meta-item hidden">
-                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
                                 <a target="_blank" rel="noopener noreferrer"></a>
                             </div>
                             <div id="user-joined" class="meta-item">
-                                <i class="fas fa-calendar-alt"></i>
+                                <i class="fas fa-calendar-alt" aria-hidden="true"></i>
                                 <span></span>
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Stats Card -->
-                <div class="stats-card">
+                <article class="stats-card">
                     <h3 class="card-title">Statistics</h3>
                     <div class="stats-grid">
                         <div class="stat-item">
-                            <i class="fas fa-book"></i>
+                            <i class="fas fa-book" aria-hidden="true"></i>
                             <div class="stat-content">
-                                <span class="stat-value" id="stat-repos">0</span>
+                                <span class="stat-value" id="stat-repos" aria-label="Repositories count">0</span>
                                 <span class="stat-label">Repositories</span>
                             </div>
                         </div>
                         <div class="stat-item">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-users" aria-hidden="true"></i>
                             <div class="stat-content">
-                                <span class="stat-value" id="stat-followers">0</span>
+                                <span class="stat-value" id="stat-followers" aria-label="Followers count">0</span>
                                 <span class="stat-label">Followers</span>
                             </div>
                         </div>
                         <div class="stat-item">
-                            <i class="fas fa-user-friends"></i>
+                            <i class="fas fa-user-friends" aria-hidden="true"></i>
                             <div class="stat-content">
-                                <span class="stat-value" id="stat-following">0</span>
+                                <span class="stat-value" id="stat-following" aria-label="Following count">0</span>
                                 <span class="stat-label">Following</span>
                             </div>
                         </div>
                         <div class="stat-item">
-                            <i class="fas fa-code"></i>
+                            <i class="fas fa-code" aria-hidden="true"></i>
                             <div class="stat-content">
-                                <span class="stat-value" id="stat-gists">0</span>
+                                <span class="stat-value" id="stat-gists" aria-label="Gists count">0</span>
                                 <span class="stat-label">Gists</span>
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Repositories Section -->
-                <div class="repos-section">
+                <article class="repos-section">
                     <div class="repos-header">
                         <h3 class="card-title">
                             <i class="fas fa-star"></i>
                             Top Repositories
                         </h3>
-                        <select id="repo-sort" class="repo-sort">
+                        <label for="repo-sort" class="visually-hidden">Sort repositories by</label>
+                        <select id="repo-sort" class="repo-sort" aria-label="Sort repositories">
                             <option value="stars">Most Stars</option>
                             <option value="forks">Most Forks</option>
                             <option value="updated">Recently Updated</option>
                         </select>
                     </div>
-                    <div id="repos-container" class="repos-container"></div>
+                    <div id="repos-container" class="repos-container" role="list"></div>
                     <div id="no-repos" class="no-repos hidden">
                         <i class="fas fa-folder-open"></i>
                         <p>No public repositories found</p>
                     </div>
-                </div>
+                </article>
             </section>
         </div>
     </main>
 
-    <footer class="footer">
+    <!-- Support Section -->
+    <aside class="support-section" aria-label="Support the developer">
         <div class="container">
-            <p>Built with <i class="fas fa-heart"></i> using GitHub API</p>
-            <p class="footer-links">
-                <a href="https://docs.github.com/en/rest" target="_blank" rel="noopener noreferrer">API Docs</a>
-                <span>•</span>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </p>
+            <div class="support-card">
+                <div class="support-header">
+                    <i class="fas fa-heart"></i>
+                    <h3>Enjoying this project?</h3>
+                </div>
+                <p>Your support helps keep this project alive and motivates me to create more awesome tools!</p>
+                <div class="support-buttons">
+                    <!-- Buy Me a Coffee -->
+                    <a href="https://buymeacoffee.com/dippanbhusal?new=1" target="_blank" rel="noopener noreferrer" class="support-btn coffee-btn">
+                        <i class="fas fa-coffee"></i>
+                        <span>Buy me a coffee</span>
+                    </a>
+                    
+                    <!-- GitHub Sponsor -->
+                    <a href="https://github.com/sponsors/KDippan" target="_blank" rel="noopener noreferrer" class="support-btn sponsor-btn">
+                        <i class="fas fa-heart"></i>
+                        <span>Sponsor on GitHub</span>
+                    </a>
+                    
+                    <!-- GitHub Star -->
+                    <a href="https://github.com/KDippan/github-profile-finder" target="_blank" rel="noopener noreferrer" class="support-btn star-btn">
+                        <i class="fas fa-star"></i>
+                        <span>Star on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About -->
+                <div class="footer-section">
+                    <h4>GitHub Profile Finder</h4>
+                    <p>A modern, feature-rich tool to search and explore GitHub profiles with advanced features.</p>
+                    <div class="footer-badges">
+                        <a href="https://github.com/KDippan/github-profile-finder" target="_blank" rel="noopener noreferrer">
+                            <img src="https://img.shields.io/github/stars/KDippan/github-profile-finder?style=social" alt="GitHub stars">
+                        </a>
+                        <a href="https://github.com/KDippan/github-profile-finder/fork" target="_blank" rel="noopener noreferrer">
+                            <img src="https://img.shields.io/github/forks/KDippan/github-profile-finder?style=social" alt="GitHub forks">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/KDippan/github-profile-finder" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+                        <li><a href="https://github.com/KDippan/github-profile-finder/issues" target="_blank" rel="noopener noreferrer">Report Issue</a></li>
+                        <li><a href="https://github.com/KDippan/github-profile-finder/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contribute</a></li>
+                        <li><a href="https://docs.github.com/en/rest" target="_blank" rel="noopener noreferrer">GitHub API Docs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Developer Info -->
+                <div class="footer-section">
+                    <h4>Developer</h4>
+                    <div class="developer-info">
+                        <p><strong>Dippan Bhusal</strong></p>
+                        <p>Full-Stack Developer</p>
+                        <div class="social-links">
+                            <a href="https://github.com/KDippan" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://instagram.com/dippan.bhusal" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://dippanbhusal.tech" target="_blank" rel="noopener noreferrer" aria-label="Personal website" title="Website">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                            <a href="mailto:dippan.connect@gmail.com" aria-label="Email" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2026 <a href="https://dippanbhusal.tech" target="_blank" rel="noopener noreferrer">Dippan Bhusal</a>. All rights reserved.
+                </p>
+                <p class="footer-meta">
+                    Made with <i class="fas fa-heart" aria-label="love"></i> in India • 
+                    <a href="https://github.com/KDippan/github-profile-finder/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a> • 
+                    <a href="https://github.com/KDippan/github-profile-finder" target="_blank" rel="noopener noreferrer">Open Source</a>
+                </p>
+            </div>
         </div>
     </footer>
 
     <!-- Toast Notification -->
-    <div id="toast" class="toast hidden">
+    <div id="toast" class="toast hidden" role="status" aria-live="polite">
         <i class="fas fa-check-circle"></i>
         <span id="toast-message"></span>
     </div>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
+    
+    <!-- Inline Script for Banner -->
+    <script>
+        function closeBanner() {
+            const banner = document.getElementById('github-banner');
+            banner.style.animation = 'slideUp 0.3s ease forwards';
+            setTimeout(() => {
+                banner.style.display = 'none';
+                localStorage.setItem('github-banner-closed', 'true');
+            }, 300);
+        }
+        
+        // Check if banner was closed before
+        if (localStorage.getItem('github-banner-closed') === 'true') {
+            document.getElementById('github-banner').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
