@@ -1,0 +1,48 @@
+# robots.txt for GitHub Profile Finder
+# https://gitprofilefind.dippanbhusal.tech/
+
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://gitprofilefind.dippanbhusal.tech/sitemap.xml
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Crawl delay for polite bots
+Crawl-delay: 10
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
