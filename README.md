@@ -17,7 +17,7 @@
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
 <img src="https://img.shields.io/badge/GitHub_API-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub API" />
 
-![GitHub Profile Finder Preview](https://raw.githubusercontent.com/KDippan/github-profile-finder/main/assets/preview.png)
+![GitHub Profile Finder Preview](https://i.ibb.co/ycqzXNvy/34915.jpg)
 
 </div>
 
